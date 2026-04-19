@@ -1,0 +1,12 @@
+[
+  {
+    "email": "validuser@gmail.com",
+    "password": "Test@123",
+    "expected": true
+  },
+  {
+    "email": "validuser@gmail.com",
+    "password": "wrongpass",
+    "expected": false
+  }
+]

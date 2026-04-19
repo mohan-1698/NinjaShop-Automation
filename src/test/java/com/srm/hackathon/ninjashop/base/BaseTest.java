@@ -10,18 +10,26 @@ import org.testng.annotations.BeforeMethod;
 import java.util.Properties;
 
 public class BaseTest {
+
     protected WebDriver driver;
     protected Properties prop;
 
     @BeforeMethod
     public void setup() {
+
         prop = ConfigReader.init();
 
-        DriverFactory.initDriver(); // no return
+        DriverFactory.initDriver();
 
-        driver = DriverManager.getDriver(); // get from ThreadLocal
+        driver = DriverManager.getDriver();
 
-        driver.get(prop.getProperty("baseUrl"));
+        String url = prop.getProperty("baseUrl"); // ✅ FIXED
+
+        if (url == null || url.isEmpty()) {
+            throw new RuntimeException("baseUrl is missing in config.properties");
+        }
+
+        driver.get(url);
     }
 
     @AfterMethod
