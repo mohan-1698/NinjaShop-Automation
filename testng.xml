@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="NinjaShop Suite" parallel="classes" thread-count="4">
+<suite name="NinjaShop Suite" parallel="tests" thread-count="5">
 
     <!-- Listener -->
     <listeners>
@@ -35,11 +35,19 @@
             <class name="com.srm.hackathon.ninjashop.tests.CartTest"/>
         </classes>
     </test>
-    
+
+    <!-- Checkout Tests -->
     <test name="Checkout Tests">
-    <classes>
-        <class name="com.srm.hackathon.ninjashop.tests.CheckoutTest"/>
-    </classes>
-</test>
+        <classes>
+            <class name="com.srm.hackathon.ninjashop.tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+    <!-- Validation Tests -->
+    <test name="Validation Tests">
+        <classes>
+            <class name="com.srm.hackathon.ninjashop.tests.ValidationTest"/>
+        </classes>
+    </test>
 
 </suite>

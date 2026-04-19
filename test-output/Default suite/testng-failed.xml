@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.srm.hackathon.ninjashop.tests.CartTest">
+      <class name="com.srm.hackathon.ninjashop.tests.ValidationTest">
         <methods>
           <include name="tearDown"/>
-          <include name="testUpdateCartQuantity"/>
           <include name="setup"/>
+          <include name="testInvalidEmailValidation"/>
         </methods>
-      </class> <!-- com.srm.hackathon.ninjashop.tests.CartTest -->
+      </class> <!-- com.srm.hackathon.ninjashop.tests.ValidationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

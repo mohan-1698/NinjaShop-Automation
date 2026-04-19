@@ -65,4 +65,41 @@ public class RegisterPage {
         acceptPrivacyPolicy();
         clickContinue();
     }
+    
+ // ================= VALIDATION METHODS =================
+
+ // Error locators
+ private By firstNameError = By.xpath("//div[contains(text(),'First Name must be')]");
+ private By lastNameError = By.xpath("//div[contains(text(),'Last Name must be')]");
+ private By emailError = By.xpath("//div[contains(text(),'E-Mail Address does not appear') or contains(text(),'E-Mail Address is already registered')]");
+ private By telephoneError = By.xpath("//div[contains(text(),'Telephone must be')]");
+ private By passwordError = By.xpath("//div[contains(text(),'Password must be')]");
+
+ // Submit without filling form
+ public void submitEmptyForm() {
+     clickContinue();
+ }
+
+ // Check error messages
+ public boolean isFirstNameErrorDisplayed() {
+     return driver.findElements(firstNameError).size() > 0;
+ }
+
+ public boolean isLastNameErrorDisplayed() {
+     return driver.findElements(lastNameError).size() > 0;
+ }
+
+ public boolean isEmailErrorDisplayed() {
+     return driver.findElements(emailError).size() > 0;
+ }
+
+ public boolean isTelephoneErrorDisplayed() {
+     return driver.findElements(telephoneError).size() > 0;
+ }
+
+ public boolean isPasswordErrorDisplayed() {
+     return driver.findElements(passwordError).size() > 0;
+ }
+    
+    
 }
