@@ -1,61 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-19T19:44:15 IST" name="Default suite" finished-at="2026-04-19T19:44:41 IST" duration-ms="26373">
+  <suite started-at="2026-04-19T21:05:34 IST" name="NinjaShop Suite" finished-at="2026-04-19T21:06:30 IST" duration-ms="56050">
     <groups>
     </groups>
-    <test started-at="2026-04-19T19:44:15 IST" name="Default test" finished-at="2026-04-19T19:44:41 IST" duration-ms="26373">
-      <class name="com.srm.hackathon.ninjashop.tests.CartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:15 IST" name="setup" finished-at="2026-04-19T19:44:18 IST" duration-ms="2622" status="PASS">
+    <test started-at="2026-04-19T21:05:34 IST" name="Auth Tests" finished-at="2026-04-19T21:05:48 IST" duration-ms="14407">
+      <class name="com.srm.hackathon.ninjashop.tests.AuthTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:34 IST" name="setup" finished-at="2026-04-19T21:05:37 IST" duration-ms="3236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testAddToCart()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:18 IST" name="testAddToCart" finished-at="2026-04-19T19:44:22 IST" duration-ms="4817" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:37 IST" name="testInvalidLogin" finished-at="2026-04-19T21:05:39 IST" duration-ms="2096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:39 IST" name="tearDown" finished-at="2026-04-19T21:05:40 IST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:40 IST" name="setup" finished-at="2026-04-19T21:05:42 IST" duration-ms="2113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLogout()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:42 IST" name="testLogout" finished-at="2026-04-19T21:05:44 IST" duration-ms="2731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:44 IST" name="tearDown" finished-at="2026-04-19T21:05:45 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:45 IST" name="setup" finished-at="2026-04-19T21:05:46 IST" duration-ms="1579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:46 IST" name="testValidLogin" finished-at="2026-04-19T21:05:48 IST" duration-ms="1815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.AuthTest@28cda624]" started-at="2026-04-19T21:05:48 IST" name="tearDown" finished-at="2026-04-19T21:05:48 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.hackathon.ninjashop.tests.AuthTest -->
+    </test> <!-- Auth Tests -->
+    <test started-at="2026-04-19T21:05:49 IST" name="Registration Tests" finished-at="2026-04-19T21:05:52 IST" duration-ms="3718">
+      <class name="com.srm.hackathon.ninjashop.tests.RegisterTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.RegisterTest@78fa769e]" started-at="2026-04-19T21:05:49 IST" name="setup" finished-at="2026-04-19T21:05:50 IST" duration-ms="1548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testRegistration()[pri:0, instance:com.srm.hackathon.ninjashop.tests.RegisterTest@78fa769e]" started-at="2026-04-19T21:05:50 IST" name="testRegistration" finished-at="2026-04-19T21:05:52 IST" duration-ms="1936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.RegisterTest@78fa769e]" started-at="2026-04-19T21:05:52 IST" name="tearDown" finished-at="2026-04-19T21:05:52 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.hackathon.ninjashop.tests.RegisterTest -->
+    </test> <!-- Registration Tests -->
+    <test started-at="2026-04-19T21:05:52 IST" name="Product Tests" finished-at="2026-04-19T21:06:02 IST" duration-ms="9236">
+      <class name="com.srm.hackathon.ninjashop.tests.ProductTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:52 IST" name="setup" finished-at="2026-04-19T21:05:54 IST" duration-ms="1363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCategoryNavigation()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:54 IST" name="testCategoryNavigation" finished-at="2026-04-19T21:05:54 IST" duration-ms="742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCategoryNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:54 IST" name="tearDown" finished-at="2026-04-19T21:05:55 IST" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:55 IST" name="setup" finished-at="2026-04-19T21:05:56 IST" duration-ms="1572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testInvalidSearch()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:56 IST" name="testInvalidSearch" finished-at="2026-04-19T21:05:57 IST" duration-ms="476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:57 IST" name="tearDown" finished-at="2026-04-19T21:05:57 IST" duration-ms="226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:57 IST" name="setup" finished-at="2026-04-19T21:05:58 IST" duration-ms="1377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testProductDetail()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:58 IST" name="testProductDetail" finished-at="2026-04-19T21:05:59 IST" duration-ms="966" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductDetail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:59 IST" name="tearDown" finished-at="2026-04-19T21:05:59 IST" duration-ms="219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:05:59 IST" name="setup" finished-at="2026-04-19T21:06:01 IST" duration-ms="1424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testSearchProduct()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:06:01 IST" name="testSearchProduct" finished-at="2026-04-19T21:06:01 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.ProductTest@5852c06f]" started-at="2026-04-19T21:06:01 IST" name="tearDown" finished-at="2026-04-19T21:06:02 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.hackathon.ninjashop.tests.ProductTest -->
+    </test> <!-- Product Tests -->
+    <test started-at="2026-04-19T21:06:02 IST" name="Cart Tests" finished-at="2026-04-19T21:06:24 IST" duration-ms="22445">
+      <class name="com.srm.hackathon.ninjashop.tests.CartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:02 IST" name="setup" finished-at="2026-04-19T21:06:03 IST" duration-ms="1403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddToCart()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:03 IST" name="testAddToCart" finished-at="2026-04-19T21:06:07 IST" duration-ms="3936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:22 IST" name="tearDown" finished-at="2026-04-19T19:44:23 IST" duration-ms="202" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:07 IST" name="tearDown" finished-at="2026-04-19T21:06:07 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:23 IST" name="setup" finished-at="2026-04-19T19:44:24 IST" duration-ms="1771" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:07 IST" name="setup" finished-at="2026-04-19T21:06:09 IST" duration-ms="1524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testCartCount()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:24 IST" name="testCartCount" finished-at="2026-04-19T19:44:28 IST" duration-ms="3545" status="PASS">
+        <test-method signature="testCartCount()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:09 IST" name="testCartCount" finished-at="2026-04-19T21:06:12 IST" duration-ms="3159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCartCount -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:28 IST" name="tearDown" finished-at="2026-04-19T19:44:28 IST" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:12 IST" name="tearDown" finished-at="2026-04-19T21:06:12 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:28 IST" name="setup" finished-at="2026-04-19T19:44:30 IST" duration-ms="1793" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:12 IST" name="setup" finished-at="2026-04-19T21:06:14 IST" duration-ms="1482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testRemoveFromCart()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:30 IST" name="testRemoveFromCart" finished-at="2026-04-19T19:44:35 IST" duration-ms="4564" status="PASS">
+        <test-method signature="testRemoveFromCart()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:14 IST" name="testRemoveFromCart" finished-at="2026-04-19T21:06:18 IST" duration-ms="4219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveFromCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:35 IST" name="tearDown" finished-at="2026-04-19T19:44:35 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:18 IST" name="tearDown" finished-at="2026-04-19T21:06:18 IST" duration-ms="219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:35 IST" name="setup" finished-at="2026-04-19T19:44:36 IST" duration-ms="1570" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:18 IST" name="setup" finished-at="2026-04-19T21:06:20 IST" duration-ms="1534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testUpdateCartQuantity()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:36 IST" name="testUpdateCartQuantity" finished-at="2026-04-19T19:44:41 IST" duration-ms="4597" status="PASS">
+        <test-method signature="testUpdateCartQuantity()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:20 IST" name="testUpdateCartQuantity" finished-at="2026-04-19T21:06:24 IST" duration-ms="4214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateCartQuantity -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@235834f2]" started-at="2026-04-19T19:44:41 IST" name="tearDown" finished-at="2026-04-19T19:44:41 IST" duration-ms="254" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CartTest@34129c78]" started-at="2026-04-19T21:06:24 IST" name="tearDown" finished-at="2026-04-19T21:06:24 IST" duration-ms="282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.srm.hackathon.ninjashop.tests.CartTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Cart Tests -->
+    <test started-at="2026-04-19T21:06:24 IST" name="Checkout Tests" finished-at="2026-04-19T21:06:30 IST" duration-ms="5899">
+      <class name="com.srm.hackathon.ninjashop.tests.CheckoutTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CheckoutTest@4ef74c30]" started-at="2026-04-19T21:06:24 IST" name="setup" finished-at="2026-04-19T21:06:25 IST" duration-ms="1394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testCheckoutWithStockLimitation()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CheckoutTest@4ef74c30]" started-at="2026-04-19T21:06:25 IST" name="testCheckoutWithStockLimitation" finished-at="2026-04-19T21:06:30 IST" duration-ms="4270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithStockLimitation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.srm.hackathon.ninjashop.tests.CheckoutTest@4ef74c30]" started-at="2026-04-19T21:06:30 IST" name="tearDown" finished-at="2026-04-19T21:06:30 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.srm.hackathon.ninjashop.tests.CheckoutTest -->
+    </test> <!-- Checkout Tests -->
+  </suite> <!-- NinjaShop Suite -->
 </testng-results>

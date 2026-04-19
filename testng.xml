@@ -35,5 +35,11 @@
             <class name="com.srm.hackathon.ninjashop.tests.CartTest"/>
         </classes>
     </test>
+    
+    <test name="Checkout Tests">
+    <classes>
+        <class name="com.srm.hackathon.ninjashop.tests.CheckoutTest"/>
+    </classes>
+</test>
 
 </suite>
