@@ -79,4 +79,43 @@ public class HomePage {
 
         wait.until(ExpectedConditions.elementToBeClickable(macOption)).click();
     }
+    
+    
+ // Add to Cart button (first product)
+    private By addToCartBtn = By.xpath("(//button[contains(@onclick,'cart.add')])[1]");
+
+    // Cart icon
+    private By cartIcon = By.xpath("//a[@title='Shopping Cart']");
+
+    // Cart count (optional)
+   
+
+    public void addFirstProductToCart() {
+        wait.until(ExpectedConditions.elementToBeClickable(addToCartBtn)).click();
+    }
+
+    public void goToCart() {
+        wait.until(ExpectedConditions.elementToBeClickable(cartIcon)).click();
+    }
+
+    public String getCartCountText() {
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(cartTotal)).getText();
+    }
+    
+    private By cartTotal = By.id("cart-total");
+
+    public void waitForCartToUpdate(String expectedText) {
+        wait.until(ExpectedConditions.textToBePresentInElementLocated(cartTotal, expectedText));
+    }
+    
+ // ================= PRODUCT =================
+
+ // First product name on homepage
+ private By firstProductName = By.xpath("(//div[@class='caption']//a)[1]");
+
+ public String getFirstProductName() {
+     return wait.until(
+             ExpectedConditions.visibilityOfElementLocated(firstProductName)
+     ).getText();
+ }
 }
